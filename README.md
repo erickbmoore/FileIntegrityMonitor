@@ -1,9 +1,29 @@
 <h1>File Integrity Monitor (FIM)</h1>
 
-Test. Update in progress...
-
 <h2>Description</h2>
-FIM creation. The FIM will Ask the user what they want to do. Two Options: 1) Collect new Baseline or 2) Begin monitoring files with saved Baseline. Option 1 will calculate HASH value from target files and store the file hash pairs in baseline.txt. Option 2 will load file:hash pairs from baseline.txt. Continuously monitor file integrity by looping through each file, calculate the hash, and compare the file|hash to what is baseline.txt. It will notify user if a file is changed or deleted by comparing the actual hash to what is recorded in the baseline and print to the screen with color if a file has been changed or deleted (Integrity compromised).
+
+#### Overview
+This project involves the creation of a File Integrity Monitoring (FIM) system that enables users to monitor the integrity of specified files. The FIM provides two main options for user interaction:
+
+1. **Collect New Baseline**: 
+   - The user can choose to calculate the hash values of target files and store the file hash pairs in `baseline.txt`.
+
+2. **Begin Monitoring Files with Saved Baseline**: 
+   - The user can load existing file:hash pairs from `baseline.txt` and continuously monitor the integrity of these files.
+
+#### Functionality
+
+- **Option 1**: 
+  - Calculates the hash value from target files and stores the results in `baseline.txt`.
+
+- **Option 2**: 
+  - Loads the file:hash pairs from `baseline.txt` and initiates a monitoring loop.
+  - In this loop, the system calculates the current hash of each file and compares it to the corresponding hash in `baseline.txt`.
+  - If a file is changed or deleted, the system notifies the user, displaying a message in color to indicate compromised integrity.
+
+#### Outcome
+This FIM system enhances file security by providing real-time monitoring and alerts for any unauthorized changes, ensuring the integrity of critical files.
+
 <br />
 
 
